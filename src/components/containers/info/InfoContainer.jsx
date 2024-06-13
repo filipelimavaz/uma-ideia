@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../../button/Button'
+import { Link } from 'react-router-dom'
 import './InfoContainerStyles.css'
 
 const InfoContainer = (props) => {
@@ -12,12 +13,13 @@ const InfoContainer = (props) => {
                 <div className='info-text'>
                     <h2>{props.textTitle}</h2>
                     <p>{props.textContent}</p>
-                    <Button
-                        buttonCName='button info'
-                        url={props.url}
-                        buttonText={props.buttonText}
-                        buttonIcon={props.buttonIcon}
-                    />
+                    <Link to={props.url}>
+                        <Button
+                            buttonCName='button info'
+                            buttonText={props.buttonText}
+                            buttonIcon={props.buttonIcon}
+                        />
+                    </Link>
                 </div>
                 <div className='info-image'>
                     <img src={props.img1} alt='' />
