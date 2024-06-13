@@ -21,7 +21,7 @@ const Home = () => {
       <CardContainer />
 
       <InfoContainer
-        sessionTitle='Nossa história'
+        sessionTitle='Nossa História'
         sessionText='Conheça um pouquinho sobre a gente'
         cName='info-content'
         textTitle='Pirpirituba, PB'
