@@ -1,9 +1,10 @@
 import React from 'react'
-import Hero from '../../components/hero/Hero'
-import heroImg from '../../assets/imgs/1.jpg'
 import InfoContainer from '../../components/containers/info/InfoContainer'
 import CardContainer from '../../components/containers/card/CardContainer'
 import Carousel from '../../components/carousel/Carousel'
+
+import './HomeStyles.css'
+import Button from '../../components/button/Button'
 
 import infoImg1 from '../../assets/imgs/2.jpg'
 import infoImg2 from '../../assets/imgs/3.jpg'
@@ -32,8 +33,69 @@ const Home = () => {
         buttonIcon='fa-solid fa-arrow-pointer'
       />
 
-      <div className='session-container'>
-        <h2>Nossos Serviços</h2>
+      <div className='portfolio-container'>
+        <h2>Porfólio</h2>
+        <p>Vem conferir nossos trabalhos</p>
+
+        <div className='switch-container'>
+          <h3>Fotografia</h3>
+          <label className="switch">
+          <input type="checkbox"/>
+          <span class="slider round"></span>
+          </label>
+          <h3>Design Gráfico</h3>
+        </div>
+
+        <div className='items-container'>
+          <div className='image-card'>
+            <img src={infoImg1}></img>
+          </div>
+          <div className='image-card'>
+            <img src={infoImg2}></img>
+          </div>
+          <div className='image-card'>
+            <img src={infoImg3}></img>
+          </div>
+          <div className='image-card'>
+            <img src={infoImg3}></img>
+          </div>
+          <div className='image-card'>
+            <img src={infoImg1}></img>
+          </div>
+          <div className='image-card'>
+            <img src={infoImg2}></img>
+          </div>
+          <div className='image-card'>
+            <img src={infoImg2}></img>
+          </div>
+          <div className='image-card'>
+            <img src={infoImg3}></img>
+          </div>
+          <div className='image-card'>
+            <img src={infoImg1}></img>
+          </div>
+        </div>
+
+        <h4>Quer ver mais?</h4>
+        <p> Você pode entrar em nosso perfil do Instagram ou fazer o download dos nossos portfólios</p>
+
+        <div className='portfolio-buttons'>
+          <Button
+            buttonCName='button info'
+            buttonText='Instagram'
+            buttonIcon='fa-brands fa-instagram'
+          />
+          <Button
+            buttonCName='button info'
+            buttonText='Fotografia'
+            buttonIcon='fa-solid fa-file-pdf'
+          />
+          <Button
+            buttonCName='button info'
+            buttonText='Design Gráfico'
+            buttonIcon='fa-solid fa-file-pdf'
+          />
+        </div>
       </div>
     </div>
   )

@@ -1,12 +1,12 @@
 .button {
     display: flex;
-    background: var(--primary-font-color);
+    background: var(--primary-color);
     padding: 1rem 2rem;
     border-radius: 6px;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 2px;
-    color: var(--secondary-font-color);
+    color: var(--primary-font-color);
     gap: 0.8rem;
     align-items: center;
     justify-content: center;
@@ -20,8 +20,7 @@
 }
 
 .button:hover {
-    background: var(--secondary-font-color);
-    color: var(--primary-font-color);
+    background: var(--secondary-color);
     transition: 0.5s ease-in-out;
 }
 
