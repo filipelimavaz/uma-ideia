@@ -19,6 +19,18 @@
     padding: 1rem;
 }
 
+.button.nav {
+    border: none;
+    padding: 0.8rem 1rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.button.nav:hover {
+    background: var(--tertiary-color);
+    color: var(--primary-color)
+}
+
 .button:hover {
     background: var(--secondary-color);
     transition: 0.5s ease-in-out;

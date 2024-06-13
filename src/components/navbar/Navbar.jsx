@@ -3,6 +3,7 @@ import './NavbarStyles.css'
 import data from './navbarData.json'
 import logo from '../../assets/imgs/logo.png'
 import { Link } from 'react-router-dom'
+import Button from '../button/Button'
 
 const Navbar = () => {
 
@@ -31,7 +32,14 @@ const Navbar = () => {
             </Link>
           </li>
         ))}
-
+        <li>
+          <Button
+            url='https://api.whatsapp.com/send?phone=5583986264672&text=Ol%C3%A1,%20Ag%C3%AAncia%20Uma%20Ideia'
+            buttonCName='button nav'
+            buttonText='Whatsapp'
+            buttonIcon='fa-brands fa-whatsapp'
+          />
+        </li>
       </ul>
     </nav>
   )

@@ -81,16 +81,19 @@ const Home = () => {
 
         <div className='portfolio-buttons'>
           <Button
+            url='https://www.instagram.com/umaideia_/'
             buttonCName='button info'
             buttonText='Instagram'
             buttonIcon='fa-brands fa-instagram'
           />
           <Button
+            url='https://drive.google.com/file/d/1qcwyzBHfiwThV8Rrab_snGLDbnc5m5Tf/view'
             buttonCName='button info'
             buttonText='Fotografia'
             buttonIcon='fa-solid fa-file-pdf'
           />
           <Button
+            url='https://drive.google.com/file/d/116nokkI0gI1fz34uTLcUdMDmwXHhVqK_/view'
             buttonCName='button info'
             buttonText='Design Gráfico'
             buttonIcon='fa-solid fa-file-pdf'
