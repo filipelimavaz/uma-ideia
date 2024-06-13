@@ -48,7 +48,6 @@
 }
 
 .slider-text p {
-  margin: 0.5rem 0;
   font-size: 1.1rem;
 }
 
@@ -104,4 +103,18 @@
 
 .indicator.active {
   background-color: white;
+}
+
+@media screen and (max-width: 850px) {
+  .slider-text {
+    gap: 1rem;
+  }
+
+  .slider-text p {
+    font-size: 0.8rem;
+  }
+
+  .slider-text img {
+    width: 30px;
+  }
 }

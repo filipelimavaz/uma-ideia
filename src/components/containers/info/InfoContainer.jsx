@@ -1,11 +1,11 @@
 import React from 'react'
-import Button from '../button/Button'
+import Button from '../../button/Button'
 import './InfoContainerStyles.css'
 
 const InfoContainer = (props) => {
     return (
         <div className='info-container'>
-            <h1>{props.sessionTitle}</h1>
+            <h2>{props.sessionTitle}</h2>
             <p>{props.sessionText}</p>
 
             <div className={props.cName}>

@@ -31,6 +31,10 @@ const Home = () => {
         buttonText='Saiba mais'
         buttonIcon='fa-solid fa-arrow-pointer'
       />
+
+      <div className='session-container'>
+        <h2>Nossos Serviços</h2>
+      </div>
     </div>
   )
 }
