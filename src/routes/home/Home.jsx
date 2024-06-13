@@ -11,7 +11,7 @@ import infoImg3 from '../../assets/imgs/1.jpg'
 
 const Home = () => {
   const sliderImages = [infoImg1, infoImg2, infoImg3]
-  const sliderTexts = ['na mídia digital', 'na fotografia', 'no audiovisual']
+  const sliderTexts = ['no design', 'na fotografia', 'no audiovisual']
 
   return (
     <div>
