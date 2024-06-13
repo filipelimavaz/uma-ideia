@@ -19,7 +19,6 @@
 .navbar-logo img {
     min-width: 50px;
     height: auto;
-    opacity: 1;
 }
 
 .nav-menu {
@@ -65,11 +64,6 @@
 }
 
 @media screen and (max-width: 650px) {
-    .navbar-itens {
-        position: relative;
-        z-index: 2;
-    }
-
     .nav-menu {
         display: flex;
         flex-direction: column;
@@ -90,7 +84,7 @@
     .nav-menu.active {
         top: 0;
         opacity: 1;
-        z-index: -1;
+        z-index: 1;
         transition: 0.5s;
     }
 
@@ -103,5 +97,10 @@
         display: block;
         font-size: 1.8rem;
         color: var(--primary-font-color);
+        z-index: 2;
+    }
+
+    .navbar-logo img{
+        z-index: 2;
     }
 }
