@@ -1,11 +1,18 @@
-import { React, useState } from 'react';
-import ImageCard from '../imagecard/ImageCard';
-import Button from '../../button/Button';
-import './PortfolioContainer.css';
+import { React, useEffect, useState } from 'react'
+import ImageCard from '../imagecard/ImageCard'
+import Button from '../../button/Button'
+import './PortfolioContainer.css'
 
 const PortfolioContainer = (props) => {
   const [checked, setChecked] = useState(false);
-  const images = checked ? props.graphicDesignImages : props.photographImages;
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setImages(checked ? props.graphicDesignImages : props.photographImages)
+    }, 500)
+    return () => clearTimeout(timeoutId)
+  }, [checked])
 
   return (
     <div className='portfolio-container'>
@@ -15,10 +22,10 @@ const PortfolioContainer = (props) => {
       <div className='switch-container'>
         <h3>{props.photographyTitle}</h3>
         <label className="switch">
-          <input 
-            type="checkbox" 
-            checked={checked} 
-            onChange={() => setChecked(!checked)} 
+          <input
+            type="checkbox"
+            checked={checked}
+            onChange={() => setChecked(!checked)}
           />
           <span className="slider round"></span>
         </label>
@@ -26,7 +33,7 @@ const PortfolioContainer = (props) => {
       </div>
 
       <div className={`items-container ${checked ? 'active' : ''}`}>
-        <div className={`clip-layer ${checked ? 'active' : 'desactive'}`}></div>
+        <div className={`clip-layer ${checked ? 'active' : ''}`}></div>
         {images.map((image, index) => (
           <ImageCard key={index} src={image} alt={`Portfolio Image ${index + 1}`} />
         ))}
@@ -59,4 +66,4 @@ const PortfolioContainer = (props) => {
   )
 }
 
-export default PortfolioContainer;
+export default PortfolioContainer
