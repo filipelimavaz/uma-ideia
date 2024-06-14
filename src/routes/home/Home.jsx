@@ -2,16 +2,24 @@ import React from 'react'
 import InfoContainer from '../../components/containers/info/InfoContainer'
 import CardContainer from '../../components/containers/card/CardContainer'
 import Carousel from '../../components/carousel/Carousel'
+import PortfolioContainer from '../../components/containers/portfolio/PortfolioContainer'
 
 import './HomeStyles.css'
-import Button from '../../components/button/Button'
 
 import infoImg1 from '../../assets/imgs/2.jpg'
 import infoImg2 from '../../assets/imgs/3.jpg'
 import infoImg3 from '../../assets/imgs/1.jpg'
+import infoImg4 from '../../assets/imgs/4.jpg'
+import infoImg5 from '../../assets/imgs/5.jpg'
+import infoImg6 from '../../assets/imgs/6.jpg'
+import infoImg10 from '../../assets/imgs/10.jpg'
+import infoImg8 from '../../assets/imgs/8.jpg'
+import infoImg9 from '../../assets/imgs/9.jpg'
 
 const Home = () => {
   const sliderImages = [infoImg1, infoImg2, infoImg3]
+  const photographImages = [infoImg1, infoImg2, infoImg3, infoImg4, infoImg5, infoImg6, infoImg10, infoImg8, infoImg9, infoImg1, infoImg2, infoImg3]
+  const graphicDesignImages = [infoImg5, infoImg4, infoImg2, infoImg3, infoImg8, infoImg1, infoImg10, infoImg9, infoImg5, infoImg3, infoImg1, infoImg2]
   const sliderTexts = ['no design', 'na fotografia', 'no audiovisual']
 
   return (
@@ -33,73 +41,23 @@ const Home = () => {
         buttonIcon='fa-solid fa-arrow-pointer'
       />
 
-      <div className='portfolio-container'>
-        <h2>Porfólio</h2>
-        <p>Vem conferir nossos trabalhos</p>
+      <PortfolioContainer
+         portfolioTitle='Porfólio'
+         portfolioDescription='Vem conferir nossos trabalhos'
+         photographyTitle='Fotografia'
+         graphicDesignTitle='Design Gráfico'
+         photographImages={photographImages}
+         graphicDesignImages={graphicDesignImages}
+         moreTitle='Quer ver mais?'
+         moreDescription='Você pode entrar em nosso perfil do Instagram ou fazer o download dos nossos portfólios'
+         instagramUrl='https://www.instagram.com/umaideia_/'
+         instagramButtonText='Instagram'
+         photographyUrl='https://drive.google.com/file/d/1qcwyzBHfiwThV8Rrab_snGLDbnc5m5Tf/view'
+         photographyButtonText='Fotografia'
+         graphicDesignUrl='https://drive.google.com/file/d/116nokkI0gI1fz34uTLcUdMDmwXHhVqK_/view'
+         graphicDesignButtonText='Design Gráfico'
+      />
 
-        <div className='switch-container'>
-          <h3>Fotografia</h3>
-          <label className="switch">
-          <input type="checkbox"/>
-          <span class="slider round"></span>
-          </label>
-          <h3>Design Gráfico</h3>
-        </div>
-
-        <div className='items-container'>
-          <div className='image-card'>
-            <img src={infoImg1}></img>
-          </div>
-          <div className='image-card'>
-            <img src={infoImg2}></img>
-          </div>
-          <div className='image-card'>
-            <img src={infoImg3}></img>
-          </div>
-          <div className='image-card'>
-            <img src={infoImg3}></img>
-          </div>
-          <div className='image-card'>
-            <img src={infoImg1}></img>
-          </div>
-          <div className='image-card'>
-            <img src={infoImg2}></img>
-          </div>
-          <div className='image-card'>
-            <img src={infoImg2}></img>
-          </div>
-          <div className='image-card'>
-            <img src={infoImg3}></img>
-          </div>
-          <div className='image-card'>
-            <img src={infoImg1}></img>
-          </div>
-        </div>
-
-        <h4>Quer ver mais?</h4>
-        <p> Você pode entrar em nosso perfil do Instagram ou fazer o download dos nossos portfólios</p>
-
-        <div className='portfolio-buttons'>
-          <Button
-            url='https://www.instagram.com/umaideia_/'
-            buttonCName='button info'
-            buttonText='Instagram'
-            buttonIcon='fa-brands fa-instagram'
-          />
-          <Button
-            url='https://drive.google.com/file/d/1qcwyzBHfiwThV8Rrab_snGLDbnc5m5Tf/view'
-            buttonCName='button info'
-            buttonText='Fotografia'
-            buttonIcon='fa-solid fa-file-pdf'
-          />
-          <Button
-            url='https://drive.google.com/file/d/116nokkI0gI1fz34uTLcUdMDmwXHhVqK_/view'
-            buttonCName='button info'
-            buttonText='Design Gráfico'
-            buttonIcon='fa-solid fa-file-pdf'
-          />
-        </div>
-      </div>
     </div>
   )
 }

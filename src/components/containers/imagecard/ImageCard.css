@@ -1,0 +1,9 @@
+.image-card img {
+    min-height: 250px;
+    max-height: 250px;
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+    opacity: 1;
+    transition: 2s;
+}
