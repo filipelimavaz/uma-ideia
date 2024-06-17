@@ -3,6 +3,7 @@ import InfoContainer from '../../components/containers/info/InfoContainer'
 import CardContainer from '../../components/containers/card/CardContainer'
 import Carousel from '../../components/carousel/Carousel'
 import PortfolioContainer from '../../components/containers/portfolio/PortfolioContainer'
+import Footer from '../../components/footer/Footer'
 
 import './HomeStyles.css'
 
@@ -58,6 +59,7 @@ const Home = () => {
          graphicDesignButtonText='Design Gráfico'
       />
 
+      <Footer/>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react'
 import ImageCard from '../imagecard/ImageCard'
 import Button from '../../button/Button'
-import './PortfolioContainer.css'
+import './PortfolioContainerStyles.css'
 
 const PortfolioContainer = (props) => {
   const [checked, setChecked] = useState(false);
