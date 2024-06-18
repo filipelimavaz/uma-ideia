@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useState } from 'react'
 import './ContactStyles.css'
 import Hero from '../../components/hero/Hero'
 import Footer from '../../components/footer/Footer'
@@ -6,6 +6,8 @@ import Footer from '../../components/footer/Footer'
 import contactImg from '../../assets/imgs/2.jpg'
 
 const Contact = () => {
+  const [iframeLoaded, setIframeLoaded] = useState(true);
+
   return (
     <div>
       <Hero
@@ -38,18 +40,24 @@ const Contact = () => {
             <a href='https://api.whatsapp.com/send?phone=5583986264672&text=Ol%C3%A1,%20Ag%C3%AAncia%20Uma%20Ideia'><i className='fa-brands fa-square-whatsapp'></i></a>
           </div>
         </div>
+        <div className='shape'></div>
         <div className='contact-map'>
           <h2>Como chegar até nós</h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509676!2d144.95373531590423!3d-37.8162797420116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f64bdb%3A0xb1a1b1b1a1a1a1a1!2sFederation+Square!5e0!3m2!1sen!2sau!4v1532584245643"
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
+          {iframeLoaded && (
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509676!2d144.95373531590423!3d-37.8162797420116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f64bdb%3A0xb1a1b1b1a1a1a1a1!2sFederation+Square!5e0!3m2!1sen!2sau!4v1532584245643"
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
+          )}
+          {!iframeLoaded && (
+            <button onClick={() => setIframeLoaded(true)}>Carregar Mapa</button>
+          )}
         </div>
       </div>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from 'react'
-import ImageCard from '../imagecard/ImageCard'
+import ImageCard from '../../imagecard/ImageCard'
 import Button from '../../button/Button'
 import './PortfolioContainerStyles.css'
 
@@ -35,7 +35,7 @@ const PortfolioContainer = (props) => {
       <div className={`items-container ${checked ? 'active' : ''}`}>
         <div className={`clip-layer ${checked ? 'active' : ''}`}></div>
         {images.map((image, index) => (
-          <ImageCard key={index} src={image} alt={`Portfolio Image ${index + 1}`} />
+          <ImageCard key={index} cName={'image-card'} src={image} alt={`Portfolio Image ${index + 1}`} />
         ))}
       </div>
 

@@ -4,6 +4,7 @@
     align-items: start;
     justify-content: center;
     gap: 3rem;
+    position: relative;
 }
 
 .contact h2 {
@@ -49,3 +50,14 @@
     border-radius: 6px;
 }
 
+@media screen and (max-width: 1250px) {
+    .contact-map {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .contact {
+        padding: 2rem;
+    }
+}

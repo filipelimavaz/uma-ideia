@@ -28,7 +28,6 @@
     margin-left: 2rem;
 }
 
-/* The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;
@@ -36,7 +35,6 @@
     height: 34px;
 }
 
-/* The slider */
 .slider {
     position: absolute;
     cursor: pointer;
@@ -71,7 +69,6 @@ input:checked+.slider:before {
     transform: translateX(2.9rem);
 }
 
-/* Rounded sliders */
 .slider.round {
     border-radius: 34px;
 }
