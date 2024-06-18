@@ -22,11 +22,11 @@ const Contact = () => {
           <p>Estamos sempre disponíveis em nossos meios de comunicação!</p>
           <div>
             <h3><i className='fa-solid fa-phone'></i>Telefone: </h3>
-            <p>83 90000-0000</p>
+            <a href="tel:teste@gmail.com">teste@gmail.com</a>
           </div>
           <div>
             <h3><i className='fa-solid fa-envelope'></i>E-mail: </h3>
-            <p>83 90000-0000</p>
+            <a href="mailto:agenciaumaideia@gmail.com">agenciaumaideia@gmail.com</a>
           </div>
           <div>
             <h3><i className='fa-solid fa-location-dot'></i>Endereço: </h3>

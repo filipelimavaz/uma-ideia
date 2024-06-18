@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import './FooterStyles.css'
 
 const Footer = () => {
@@ -18,30 +20,37 @@ const Footer = () => {
       </div>
       <div className='bottom'>
         <div>
-          <h4>Project</h4>
-          <a href="./">Changelog</a>
-          <a href="./">Status</a>
-          <a href="./">License</a>
-          <a href="./">All Versions</a>
+          <h4>Website</h4>
+          <Link to='/'>
+            <a>Home</a>
+          </Link>
+          <Link to='/sobre'>
+            <a>Sobre</a>
+          </Link>
+          <Link to='/servicos'>
+            <a>Serviços</a>
+          </Link>
+          <Link to='/contato'>
+            <a>Contato</a>
+          </Link>
         </div>
         <div>
-          <h4>Community</h4>
-          <a href="./">GitHub</a>
-          <a href="./">Issues</a>
-          <a href="./">Project</a>
-          <a href="./">Twitter</a>
+          <h4>Redes Sociais</h4>
+          <a href="https://www.instagram.com/umaideia_/">Instagram</a>
+          <a href="https://www.facebook.com/umaideiaagencia/">Facebook</a>
+          <a href="./">LinkedIn</a>
+          <a href="https://api.whatsapp.com/send?phone=5583986264672&text=Ol%C3%A1,%20Ag%C3%AAncia%20Uma%20Ideia">Whastapp</a>
         </div>
         <div>
-          <h4>Help</h4>
-          <a href="./">Support</a>
-          <a href="./">Troubleshooting</a>
-          <a href="./">Contact Us</a>
+          <h4>Contate-nos</h4>
+          <a href="tel:83900000000">Tel: 83 90000-0000</a>
+          <a href="mailto:agenciaumaideia@gmail.com">E-mail: agenciaumaideia@gmail.com</a>
         </div>
         <div>
-          <h4>Others</h4>
-          <a href="./">Terms of Service</a>
-          <a href="./">Privacy Policy</a>
-          <a href="./">License</a>
+          <h4>Outros</h4>
+          <a href="./">Termos de Serviço</a>
+          <a href="./">Política de Privacidade</a>
+          <a href="./">Licença</a>
         </div>
       </div>
       <p>© Copyright 2024 – Todos os direitos reservados: Agência Uma Ideia</p>
