@@ -12,12 +12,25 @@
     justify-content: center;
     border: 1px solid var(--primary-font-color);
     transition: 0.5s ease-in-out;
+    box-shadow: -1px 1px 62px 18px rgba(0, 0, 0, 0.2);
 }
 
 .button.info {
     margin-top: 1rem;
     width: 250px;
     padding: 1rem;
+}
+
+.button.service {
+    margin-top: 1rem;
+    width: 250px;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+.button.service:hover {
+    background: var(--tertiary-color);
+    color: var(--primary-color);
 }
 
 .button.nav {
@@ -29,7 +42,7 @@
 
 .button.nav:hover {
     background: var(--tertiary-color);
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .button:hover {
