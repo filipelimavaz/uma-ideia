@@ -40,6 +40,11 @@
     color: var(--secondary-color);
 }
 
+.contact-map {
+    border-left: 2px solid var(--primary-color);
+    padding-left: 3rem;
+}
+
 .contact-map h2 {
     margin-bottom: 1rem;
 }

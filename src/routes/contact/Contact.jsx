@@ -40,7 +40,6 @@ const Contact = () => {
             <a href='https://api.whatsapp.com/send?phone=5583986264672&text=Ol%C3%A1,%20Ag%C3%AAncia%20Uma%20Ideia'><i className='fa-brands fa-square-whatsapp'></i></a>
           </div>
         </div>
-        <div className='shape'></div>
         <div className='contact-map'>
           <h2>Como chegar até nós</h2>
           {iframeLoaded && (

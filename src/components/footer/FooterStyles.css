@@ -68,6 +68,10 @@
         margin: 1rem 1rem 0 0;
     }
 
+    .bottom .last {
+        width: 100%;
+    }
+
     .bottom div {
         width: 50%;
     }
